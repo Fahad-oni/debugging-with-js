@@ -134,7 +134,25 @@ console.log(countVowels('aapplee')); // solved
 // Should convert Celsius to Fahrenheit using the formula (C × 9/5) + 32.
 
 function celsiusToFahrenheit(celsius) {
-  return celsius * 9 / 5 + 32; // find the bug
+  return (celsius * 9) / 5 + 32; // find the bug
 }
 
 console.log(celsiusToFahrenheit(0)); // Expected: 32
+
+// 14-9B: Array Sum Skips a Number
+// Should return the sum of all numbers in the array.
+
+function sumArray(numbers) {
+  let total = 0;
+
+  for (let i = 0; i < numbers.length; i++) {
+    // solved
+  
+    
+    total = total + numbers[i];
+  }
+
+  return total;
+}
+
+console.log(sumArray([1, 2, 3, 4])); // Expected: 10
