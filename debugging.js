@@ -147,12 +147,28 @@ function sumArray(numbers) {
 
   for (let i = 0; i < numbers.length; i++) {
     // solved
-  
-    
+
     total = total + numbers[i];
   }
 
   return total;
 }
 
-console.log(sumArray([1, 2, 3, 4])); // Expected: 10
+console.log(sumArray([1, 2, 3, 4])); 
+
+// 14-9C: String Repeat
+//  Should return a string repeated a given number of times.
+
+function repeatString(str, times) {
+  let result = '';
+
+  for (let i = 0; i < times; i++) {
+    result += str; // sloved
+    console.log(i);
+    
+  }
+
+  return result;
+}
+
+console.log(repeatString('ab', 3)); 
