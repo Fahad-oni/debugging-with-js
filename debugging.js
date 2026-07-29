@@ -67,7 +67,24 @@ console.log(getFirstElement([10, 20, 30])); // Expected: 10 (currently returns 2
 // Bug: find why the result comes out negative
 
 function subtract(a, b) {
-  return a - b; // find the bug
+  return a - b;
 }
 
-console.log(subtract(10, 3)); // Expected: 7 (currently returns -7)
+console.log(subtract(10, 3)); //  solved
+
+// Task 14-6: Rubber Duck Debugging
+// Explain this function out loud, line by line, to find the bug. It should return true if a string is empty, otherwise false.
+
+// Bug: explain this line out loud — what does str.length actually equal for ""?
+
+function isEmpty(str) {
+  if (str.length === 0) {
+    // solved
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(isEmpty('')); //true
+console.log(isEmpty('hi')); // false
