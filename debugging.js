@@ -60,3 +60,14 @@ function getFirstElement(arr) {
 }
 
 console.log(getFirstElement([10, 20, 30])); // Expected: 10 (currently returns 20)
+
+//Task 14-5: Debug a Broken Function
+// This function should return the difference between two numbers (a - b). It currently swaps the parameters somewhere and gives a wrong result.
+
+// Bug: find why the result comes out negative
+
+function subtract(a, b) {
+  return a - b; // find the bug
+}
+
+console.log(subtract(10, 3)); // Expected: 7 (currently returns -7)
