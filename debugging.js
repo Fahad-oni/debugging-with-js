@@ -97,8 +97,10 @@ console.log(isEmpty('hi')); // false
 function getOddNumbers(numbers) {
   let odds = [];
 
-  for (let i = 0; i <= numbers.length-1; i++) { // bug #1 is here
-    if (numbers[i] % 2 === 1) {                  // bug #2 is here
+  for (let i = 0; i <= numbers.length - 1; i++) {
+    // bug #1 is here
+    if (numbers[i] % 2 === 1) {
+      // bug #2 is here
       odds.push(numbers[i]);
     }
   }
@@ -107,3 +109,23 @@ function getOddNumbers(numbers) {
 }
 
 console.log(getOddNumbers([1, 2, 3, 4, 5, 6])); // solved
+
+// Task 14-8: Apply the Full Debugging Process
+// This function should return how many vowels are in a string. Go through the full checklist: does it run? does it crash? is the answer wrong? isolate it with console.log, then fix it.
+
+// Apply the full debugging process to find this bug
+
+function countVowels(str) {
+  let vowels = 'aeiou';
+  let count = 0;
+
+  for (let i = 0; i <= str.length - 1; i++) {
+    if (vowels.includes(str[i])) {
+      count = count + 1;
+    }
+  }
+
+  return count;
+}
+
+console.log(countVowels('aapplee')); // solved
