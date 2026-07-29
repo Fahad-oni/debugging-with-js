@@ -31,3 +31,21 @@ function checkScore(score) {
 
 console.log(checkScore(50)); // Expected: "Pass" (currently wrong)
 console.log(checkScore(40)); // Expected: "Fail"
+
+// Task 14-3: Debug a Broken Loop
+// This function should return the count of numbers from 1 to n. Right now it never stops (infinite loop) — find out why.
+
+// Bug: this loop never ends — find the missing piece
+
+function countUpTo(n) {
+  let count = 0;
+
+  for (let i = 1; i <= n; i++) {
+    // something is missing here
+    count = count + 1;
+  }
+
+  return count;
+}
+
+console.log(countUpTo(5)); // Expected: 5 (currently freezes/never finishes)
