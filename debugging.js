@@ -154,7 +154,7 @@ function sumArray(numbers) {
   return total;
 }
 
-console.log(sumArray([1, 2, 3, 4])); 
+console.log(sumArray([1, 2, 3, 4]));
 
 // 14-9C: String Repeat
 //  Should return a string repeated a given number of times.
@@ -165,10 +165,20 @@ function repeatString(str, times) {
   for (let i = 0; i < times; i++) {
     result += str; // sloved
     console.log(i);
-    
   }
 
   return result;
 }
 
-console.log(repeatString('ab', 3)); 
+console.log(repeatString('ab', 3));
+
+// 14-9D: Object Property Update
+// Should update a person's age property and return the updated object.
+
+function updateAge(person, newAge) {
+  person.age = newAge; // solved
+  return person;
+}
+
+console.log(updateAge({ name: 'Lee', age: 20 }, 21));
+//solved: { name: "Lee", age: 21 }
