@@ -41,11 +41,22 @@ function countUpTo(n) {
   let count = 0;
 
   for (let i = 1; i <= n; i++) {
-    // something is missing here
+    // something is missing here? here (i++) was missing, it means we started the loop but nrver increased it..so the loop become an infinite loop
     count = count + 1;
   }
 
   return count;
 }
 
-console.log(countUpTo(5)); // Expected: 5 (currently freezes/never finishes)
+console.log(countUpTo(5)); // solved
+
+// Task 14-4: Debug a Broken Array Problem
+// This function should return the first element of an array. It currently returns the wrong item.
+
+// Bug: find why this doesn't return the first element
+
+function getFirstElement(arr) {
+  return arr[0]; // solved,,to get the first element of an array we have to use the index numbers,,the array index starts with 0 and ends with array.length -1;
+}
+
+console.log(getFirstElement([10, 20, 30])); // Expected: 10 (currently returns 20)
